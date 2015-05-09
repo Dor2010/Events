@@ -1,0 +1,12 @@
+package com.dorian.events;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Main extends JavaPlugin {
+	
+	public void onEnable(){
+		Bukkit.getPluginManager().registerEvents(new PluginListener(), this);
+	}
+
+}
